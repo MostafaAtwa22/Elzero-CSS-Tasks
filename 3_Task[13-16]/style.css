@@ -1,0 +1,23 @@
+:root {
+    --main-color: green;
+}
+.parent .child .title {
+    color: red;
+}
+.parent .title {
+    color: blue;
+}
+.parent p, .title {
+    color:var(--main-color);
+}
+/****************/
+
+.ass2 div {
+    width: fit-content;
+    max-width: 400px;
+    max-height: 20px;
+    padding: 20px;
+    background-color: darkred;
+    margin: 20px auto;
+    overflow: hidden;
+}
