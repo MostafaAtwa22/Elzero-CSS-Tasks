@@ -1,0 +1,71 @@
+.ass1 {
+    width: 500px;
+    font-size: 50px;
+    text-align: center;
+    margin: 100px auto;
+    text-shadow: 2px 2px 0px #cf2e2e, 
+    4px 4px 0px #0693e3,
+    6px 6px 0px #9b51e0;
+}
+
+.ass2 {
+    width: 500px;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px auto;
+}
+.ass2 p {
+    background-color: #ddd;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.ass2 .one {
+    text-transform: uppercase
+}
+
+.ass2 .two {
+    text-transform: capitalize
+}
+
+.ass2 .three {
+    text-transform: lowercase
+}
+
+.ass3 {
+    width: 400px;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.ass3 div {
+    background-color: #ddd;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.ass3 .two, .three {
+    height: 220px;
+}
+
+.ass3 .two {
+    overflow: hidden;
+}
+
+.ass3 .three {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    font-size: 50px;
+    text-decoration: none;
+    margin: 20px auto;
+    background-color: #009688;
+    text-transform: capitalize;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 10px solid #00453e;
+}
