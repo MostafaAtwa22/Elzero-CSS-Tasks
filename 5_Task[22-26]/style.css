@@ -1,0 +1,62 @@
+:root {
+    font-size: 20px;
+}
+.ass1 {
+    width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff3d2fc4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.ass1 p {
+    font-size: 20px;
+    font-weight: 400;
+    border-style: inherit;
+    border-width: inherit;
+    border-color: inherit;
+    padding: inherit;
+}
+
+.ass2, .ass3 {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ass2 p, .ass3 p {
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ff3d2fc4;
+}
+
+.ass2 .one {
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.ass2 .two {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+.ass2 .three {
+    font-family: jomo, monospace;
+    font-weight: 400;
+}
+
+.ass3 .one {
+    font-size: 2.5rem; /* 50 / 20 px */
+}
+
+.ass3 .two {
+    font-size: 2rem; /* 40 / 20 px */
+}
+
+.ass3 .three {
+    font-size: 1.5rem; /* 30 / 20 px */
+}
