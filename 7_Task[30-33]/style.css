@@ -1,0 +1,142 @@
+:root {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ass1 {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+}
+.ass1 div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.green {
+    background-color: #009688;
+    z-index: 3;
+    left: 30px;
+    top: 30px;
+}
+.red {
+    background-color: #f44336;
+    z-index: 4;
+    left: 40px;
+    top: 40px;
+
+}
+.blue {
+    background-color: #03a9f4;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+}
+.black {
+    background-color: black;
+    z-index: 1;
+    left: 20px;
+    top: 30px;
+}
+
+.ass2 {
+    width: 400px;
+    text-align: center;
+    background-color: #ddddddc9;
+    padding: 20px;
+    margin: 50px auto;
+    border-width: 2px;
+    border-color:  #fa1515 #0075ff;
+    border-style: solid;
+    position: relative;
+}
+
+.ass2 span {
+    position: absolute;
+    padding: 5px 10px;
+    color: white;
+    background-color: #0075ff;
+}
+.ass2 .top-left {
+    top: -15px;
+    left: -15px;
+}
+.ass2 .bottom-left {
+    bottom: -15px;
+    left: -15px;
+}
+.ass2 .top-right {
+    top: -15px;
+    right: -15px;
+}
+.ass2 .bottom-right {
+    bottom: -15px;
+    right: -15px;
+}
+.ass2 .top-left, .ass2 .bottom-left {
+    border-right: 2px solid #fa1515;
+}
+.ass2 .top-right, .ass2 .bottom-right {
+    border-left: 2px solid #fa1515;
+}
+
+.parent {
+    width: 400px;
+    margin: 50px auto;
+    list-style: none;
+}
+.parent .child {
+    background-color: #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.parent .child ol li, .parent .child ul li {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.js {
+    list-style-position: inside;
+}
+table {
+    width: 700px;
+    text-align: center;
+    margin: 50px auto;
+    border-bottom: 2px solid #009688;
+}
+
+table tr td img {
+    width: 70px;
+    height: 70px;
+}
+
+tr {
+    background-color: #e0dfdfd0;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #000000a6;
+    color: white;
+}
+
+button {
+    font-weight: bolder;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.view {
+    background-color: #0366da;
+}
+
+.delete {
+    background-color: #fa1515;
+}
