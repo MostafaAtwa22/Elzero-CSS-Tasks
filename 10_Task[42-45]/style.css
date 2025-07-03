@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    --mainColor: #000;
+    --mainPadding: 10px;
+    --fontColor: red;
+}
+
+.ass1 {
+    width: 500px;
+    height: 400px;
+    background-color: #f2f2f4;
+    margin: 50px auto;
+    padding: calc(var(--mainPadding) + 10px);
+    text-align: center;
+    font-weight: bold;
+    transition: all 2s 0.5s ease;
+}
+
+.ass1 div {
+    background-color: #dededc;
+    padding: calc(var(--mainPadding) + 10px);
+    transition: all 1s 1s ease;
+}
+
+.ass1:hover  {
+    margin-top: 100px;
+    .move {
+        margin-top: 200px;
+    }
+}
+
+.ass2 {
+    width: 400px !important;
+    font-size: 20px !important;
+    padding: calc(--mainPadding + 10px) !important;  
+    text-align: center !important;
+    background-color: #eeeeee !important;
+    color: black !important;
+    border: none !important;
+    margin: 20px auto;
+    transition: all 2s 0.5s ease;
+}
+
+.ass2:hover {
+    font-size: 0px !important;
+}
+
+.ass3 div {
+    padding: var(--mainPadding);
+    margin: 10px auto;
+    color: var(--fontColor);
+    border: 2px solid var(--mainColor);
+    width: 500px;
+}

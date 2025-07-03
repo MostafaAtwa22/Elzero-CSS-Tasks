@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ass1 div {
+    width: 100px;
+    height: 100px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 20px;
+    float: left;
+    box-shadow: -5px -5px 0 0 #e91e63,
+                5px 5px 0 0 #2196f3;
+    position: relative;
+    counter-increment: cntr;
+}
+.empty {
+    clear: both;
+}
+.ass1 div::before {
+    content: counter(cntr);
+    background-color: black;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    top: -10px;
+    left: 40%;
+}
+.ass1 div::after {
+    content: "Element";
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.ass2 {
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+    margin: 20px auto;
+    box-shadow: 0 0 12px 10px #b6b6b6 inset;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 10px 20px;
+    border-bottom-right-radius: 10px 20px;
+}
+
+.ass3 {
+    width: 550px;
+    margin: 20px auto;
+}
+
+.ass3 .basic, 
+.ass3 .pro {
+    float: left;
+    padding: 20px;
+    width: calc((100% - 50px) / 2);
+    background-color: #eeeeee;
+    text-align: center;
+    position: relative;
+}
+
+.ass3 .basic {
+    margin-right: 25px;
+}
+.ass3 .pro {
+    margin-left: 25px;
+}
+
+.ass3 div p {
+    margin-top: 0px;
+    background-color: #03a9f4;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.ass3 div div {
+    background-color: #dddddd;
+    height: 200px;
+    align-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.ass3 .basic::after {
+    content: "";
+    background-color: #03a9f4;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    right: -25px;
+    top: 0;
+}
+
+.ass3 .pro::before {
+    content: "Or";
+    background-color: #03a9f4;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    align-content: center;
+}
