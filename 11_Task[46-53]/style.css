@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    --mainColor: #ff5722;
+    --mainBackground: #eeeeee;
+    --mainPadding: 10px;
+}
+
+.ass1 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--mainBackground);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--mainColor);
+    border-radius: 50%;
+    box-shadow: -5px 0 0 0 var(--mainColor),
+                5px 0 0 0 #03a9f4;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: var(--mainBackground);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: var(--mainPadding);
+    margin: 20px auto;
+}
+
+.parent div {
+    background-color: var(--mainColor);
+    padding: var(--mainPadding);
+    color: white;
+    align-items: center;
+    width: calc(540px / 3);
+    text-align: center;
+}
+
+.ass3 {
+    width: 600px;
+    height: 300px;
+    background-color: var(--mainBackground);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--mainPadding);
+    margin: 20px auto;
+}
+.ass3 div {
+    background-color: #607d8b;
+    width: calc(540px / 3);
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding: var(--mainPadding);
+}
+.ass3 .one {
+    order: 6;
+    align-self: flex-end;
+}
+.ass3 .two {
+    order: 5;
+}
+.ass3 .three {
+    order: 2;
+    align-self: flex-start;
+}
+.ass3 .four {
+    order: 3;
+}
+.ass3 .five {
+    order: 4;
+}
+.ass3 .six {
+    order: 1;
+}
+
+.ass4 {
+    width: 600px;
+    height: 300px;
+    background-color: var(--mainBackground);
+    display: flex;
+    flex-direction: column;
+    padding: var(--mainPadding);
+    margin: 20px auto;
+    justify-content: space-between;
+}
+.ass4 div {
+    background-color: #009688;
+    text-align: center;
+    align-content: center;
+    height: calc(260px / 3);
+    color: white;
+}
+
+.ass4 .one, .ass4 .three {
+    align-self: flex-end;
+    padding: var(--mainPadding);
+}
+
+.ass4 .two {
+    width: 50%;
+}
+
+.ass5 {
+    width: 600px;
+    height: 300px;
+    background-color: var(--mainBackground);
+    display: flex;
+    padding: var(--mainPadding);
+    margin: 20px auto;
+    justify-content: space-between;
+}
+.ass5 div {
+    height: 50%;
+    width: 18%;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+.ass5 .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+.ass5 .one {
+    background-color: #ff9800;
+    order: 2;
+}
+.ass5 .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+.ass5 .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.logo, .links, .content, .sidebar, .footer {
+    background-color: #dddddd;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 10%;
+}
+ul {
+    list-style: none;
+}
+.logo, .links {
+    align-content: center;
+}
+.logo {
+    text-align: center;
+    width: 10%;
+    padding: var(--mainPadding);
+}
+.links {
+    padding: var(--mainPadding);
+    width: 88%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+.links li {
+    margin-right: 20px;
+}
+.footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+.footer div {
+    display: flex;
+    padding: var(--mainPadding);
+    width: 50%;
+    align-items: center;
+}
+.footer .design {
+    justify-content: right;
+}
+.page .main-area {
+    width: 100%;
+    height: 72%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-area .content {
+    padding: var(--mainPadding);
+    width: 69%;
+}
+
+.main-area .sidebar {
+    padding: var(--mainPadding);
+    width: 29%;
+}
