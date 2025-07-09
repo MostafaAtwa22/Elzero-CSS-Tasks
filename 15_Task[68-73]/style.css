@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    --main-color:#03a9f4;
+    --background-color: #eeeeee;
+    --second-color: #e91e63;
+}
+.ass1 {
+    width: 150px;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #ff5722;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 50px auto;
+    position: relative;
+}
+.ass1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) skew(10deg ,10deg);
+    background-color: #ff5722;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+.ass1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) skew(-10deg ,-10deg);
+    background-color: #ff5722;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+/********************************/
+.ass2 {
+    background-color: #009688;
+    width: 150px;
+    padding: 20px;
+    margin: 50px auto;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.ass2::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transform: translate(-20%, -50%) skew(20deg ,0);
+    background-color: #009688;
+    left: 0%;
+    top: 50%;
+    z-index: -1;
+}
+.ass2::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    transform: translate(-240%, -50%) skew(20deg ,0);
+    background-color: #009688;
+    left: 0%;
+    top: 50%;
+}
+/***************************/
+.class {
+    transform: matrix(3, 0.2679, 0, 3, 20, 100); 
+    /* transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg) skewX(0deg) scaleY(3); */
+}
+/************************/
+.ass3 {
+    background-color: #607d8b;
+    width: 200px;
+    height: 200px;
+    margin:130px auto 50px auto;
+    color: white;
+    text-align: center;
+    border-bottom: solid 5px #000000;
+    position: relative;
+}
+.ass3::before {
+    content: "";
+    position: absolute;
+    width: calc(141.42px - 10px);
+    height:calc(141.42px - 10px);
+    transform: translate(21%, -119%) rotate(45deg);
+    background-color: #000000;
+    left: 0%;
+    top: 50%;
+    border: solid white 5px;
+}
+.ass3::after {
+    content: "Elzero";
+    color: white;
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
+}
+/**********************/
+.ass4 {
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    position: relative;
+    margin: 50px auto;
+    transition: transform 1s;
+    transform-origin: right center;
+}
+.ass4:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+.ass4::before {
+    content: "Front";
+    background-color: var(--second-color);
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.ass4::after {
+    content: "Back";
+    background-color: var(--main-color);
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+/*****************************/
+.ass5 {
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    position: relative;
+    margin: 50px auto;
+    transition: transform 1s;
+    transform-origin: top center;
+}
+.ass5:hover {
+    transform: translateY(100%) rotateX(-180deg);
+}
+.ass5::before {
+    content: "Front";
+    background-color: var(--second-color);
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.ass5::after {
+    content: "Back";
+    background-color: var(--main-color);
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
