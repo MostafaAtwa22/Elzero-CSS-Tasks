@@ -1,0 +1,32 @@
+.ass1 div.main.red {
+    color: red;
+}
+
+.ass2 .parent > div:nth-child(2) {
+    color: red;
+}
+
+.ass3 .parent > .baby:only-child {
+    color: red;
+}
+
+.ass4 > div[title]:not(.no-need) {
+    color: red;
+}
+
+/* .ass5 > div:not(.no-need) > p + div[title="Elzero"]:only-of-type:not(.no-need):last-child  */
+.ass5 div:nth-child(2) div {
+    color: red;
+}
+
+.ass6 > div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+}
+
+.ass7 > div:not(div[class*="no-need"]):first-child div:nth-last-child(2) {
+    color: red;
+}
+
+.ass8 :not(:first-child, h3, :last-child) {
+    color: red;
+}

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-postion {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+/*************************/
+.arrow {
+    width: 400px;
+    background-color: #eeeeee;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.top::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: #eeeeee;
+    left: 50%;
+    top: calc(0% - 15px);
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #eeeeee;
+    left: calc(0% - 15px);
+    top: 50%;
+}
+
+.right::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-left-color: #eeeeee;
+    left: calc(100% + 14px);
+    top: 50%;
+}
+
+.bottom::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #eeeeee;
+    left: 50%;
+    top: calc(100% + 14px);
+}
