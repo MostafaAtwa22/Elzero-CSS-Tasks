@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.input-box {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #eeeeee;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box .prefix {
+    display: block;
+    background-color: #009688;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #dddddd;
+    z-index: 1;
+}
+.input-box input {
+    padding: 15px;
+    border: 2px solid #dddddd;
+    margin-left: -2px;
+    border-radius: 0 5px 5px 0;
+}
+.input-box input:focus {
+    border: 2px solid #dddddd;
+    outline: none;
+    caret-color: #009688;
+}
